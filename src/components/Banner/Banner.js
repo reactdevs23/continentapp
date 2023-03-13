@@ -15,7 +15,7 @@ const Banner = () => {
         <div className={styles.infoBox}>
           <strong>450</strong>
 
-          <span className={styles.text}>NFTs</span>
+          <span className={styles.text}>Friends</span>
         </div>{" "}
       </div>
     </div>
