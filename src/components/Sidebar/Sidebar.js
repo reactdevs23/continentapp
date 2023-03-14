@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 
 const Sidebar = ({ showSidebar }) => {
   const navItems = [
-    { icon: wallet, navItem: "Wallet", to: "#" },
+    { icon: wallet, navItem: "Wallet", to: "/wallets" },
     { icon: marketplace, navItem: "Marketplace", to: "#" },
     { icon: explore, navItem: "Explore", to: "#" },
   ];
@@ -22,9 +22,9 @@ const Sidebar = ({ showSidebar }) => {
         <div className={styles.navItemContainer} key={i}>
           {" "}
           <img src={el.icon} alt={el.name} className={styles.icon} />
-          <a href={el.to} className={styles.navItem}>
+          <Link to={el.to} className={styles.navItem}>
             {el.navItem}
-          </a>
+          </Link>
         </div>
       ))}
       <button className={styles.button}>New Post</button>

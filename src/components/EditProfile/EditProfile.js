@@ -40,7 +40,7 @@ const EditProfile = () => {
     { navItem: "Edit profile", to: "/accountsupport" },
   ];
   return (
-    <div className={`${styles.profileWrapper} r`}>
+    <div className={`${styles.profileWrapper} `}>
       {" "}
       <div className={styles.tabsContainer}>
         {tabs.map((el, i) => (

@@ -37,6 +37,7 @@ code {
 
   /* font-family */
   --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Bowlby One SC", cursive;
 }
 
 body,
@@ -70,6 +71,9 @@ button {
 .wrapper {
   width: 90%;
   margin: 0 auto;
+}
+.marginTop {
+  margin-top: 101px;
 }
 .shadow {
   background: #343ab9;
@@ -112,5 +116,8 @@ button {
 @media only screen and (max-width: 991px) {
   .rightSide {
     padding: 0;
+  }
+  .marginTop {
+    margin-top: 165px;
   }
 }

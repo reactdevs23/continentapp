@@ -28,6 +28,10 @@ import facebook from "./social/facebook.svg";
 import instagram from "./social/instagram.svg";
 import twitter from "./social/twitter.svg";
 import email from "./social/email.svg";
+import testImg from "./nftposts/nft1.png";
+import coinbase from "./connectWallet/coinbase.svg";
+import walletConnect from "./connectWallet/walletConnect.svg";
+import metamask from "./connectWallet/metamask.svg";
 
 export {
   logo,
@@ -60,4 +64,8 @@ export {
   instagram,
   twitter,
   email,
+  coinbase,
+  walletConnect,
+  metamask,
+  testImg,
 };

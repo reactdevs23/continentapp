@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 import GroupPhoto from "../GroupPhoto/GroupPhoto";
 import AddMemberModal from "../AddMemberModal/AddMemberModal";
 import Waveform from "../../Waveform/Waveform";
-import testImg from "../../../images/nftposts/nft1.png";
+import { testImg } from "../../../images/image";
 
 const ChatRoom = ({ isRecording, DUMMY_MSGS, setShowInput }) => {
   const DUMMY__MEMBERS = [
