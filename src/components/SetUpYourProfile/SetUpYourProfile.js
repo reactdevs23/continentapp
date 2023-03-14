@@ -36,9 +36,9 @@ const SetUpYourProfile = () => {
           )}
 
           <button onClick={() => setProfilePicutersModal(true)}>
-            {selectedProfilePicture?.img
-              ? "Change ProfilePicture"
-              : "Choose a profile picture"}
+            {/* {selectedProfilePicture?.img
+              ? "Change ProfilePicture" */}
+            Choose a Profile Picture
           </button>
         </div>
         <form className={styles.userNameContainer}>

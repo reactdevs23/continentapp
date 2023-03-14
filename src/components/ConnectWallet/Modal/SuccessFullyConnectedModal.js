@@ -10,6 +10,7 @@ const SuccessFullyConnectedModal = ({ setModal }) => {
         {" "}
         <div className={styles.smallModal}>
           <div className={styles.profileInfo}>
+            <div className={styles.hexagon}></div>
             <img src={testImg} alt="#" className={styles.prifilePic} />
             <div className={styles.nameAndAddress}>
               <span className={styles.name}>juanbautista.eth</span>

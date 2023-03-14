@@ -87,6 +87,7 @@
   object-position: center;
   background-color: white;
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  border-radius: 10px;
 }
 .nameAndAddress {
   display: flex;

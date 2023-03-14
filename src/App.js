@@ -15,21 +15,16 @@ function App() {
   return (
     <div className="container">
       <Header />
-      <div className="rightSide">
-        <Routes>
-          <Route path="/" element={<MyProfile />}></Route>
-          <Route path="/userProfile" element={<UserProfile />}></Route>
-          <Route path="/editprofile" element={<EditProfile />}></Route>
-          <Route path="/wallets" element={<ConnectWallet />} />{" "}
-          <Route path="/setupProfile" element={<SetUpYourProfile />}></Route>
-          <Route
-            path="/selectProfilePicture"
-            element={<SelectProfilePicture />}
-          ></Route>
-          <Route path="/shreNft" element={<ShareNft />}></Route>
-          <Route path="/messages/:id" element={<Message />} />
-        </Routes>
-      </div>
+
+      <Routes>
+        <Route path="/" element={<ConnectWallet />} />{" "}
+        <Route path="/setupProfile" element={<SetUpYourProfile />}></Route>
+        <Route
+          path="/selectProfilePicture"
+          element={<SelectProfilePicture />}
+        ></Route>
+        <Route path="/shreNft" element={<ShareNft />}></Route>
+      </Routes>
     </div>
   );
 }

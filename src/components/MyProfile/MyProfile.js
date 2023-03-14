@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { BiChevronDown } from "react-icons/bi";
 import { user } from "../../images/image";
 import { BsShare } from "react-icons/bs";
-
+import Header from "../Header/Header";
 import ForSale from "./Posts/ForSale/ForSale";
 import NftPosts from "./Posts/NftPosts";
 import styles from "./styles.module.css";

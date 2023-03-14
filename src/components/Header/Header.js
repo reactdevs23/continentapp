@@ -16,7 +16,7 @@ const Header = () => {
     <>
       <section className={`${styles.header} container`}>
         <img src={logo} alt="#" className={styles.logo} />
-        <div className={styles.searchContainer}>
+        {/* <div className={styles.searchContainer}>
           <div className={styles.inputContainer}>
             <FiSearch className={styles.search} />
             <input
@@ -63,9 +63,9 @@ const Header = () => {
               onClick={() => setShowSidebar((prev) => !prev)}
             />
           )}
-        </div>
+        </div> */}
       </section>
-      <Sidebar showSidebar={showSidebar} />
+      {/* <Sidebar showSidebar={showSidebar} /> */}
     </>
   );
 };

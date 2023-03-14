@@ -37,7 +37,7 @@ code {
 
   /* font-family */
   --primary-font: "Roboto", sans-serif;
-  --secondary-font: "Archivo Black", sans-serif;
+  --secondary-font: "Akira Expanded", sans-serif;
 }
 
 body,
@@ -51,6 +51,11 @@ html {
     #141a42 36.61%,
     #000000 100%
   );
+}
+@font-face {
+  font-family: "Akira Expanded";
+
+  src: url(./font/akira-expanded-bold.ttf);
 }
 button {
   border: none;
@@ -67,7 +72,7 @@ button {
 }
 .rightSide {
   padding-left: 265px;
-  background: url("./images/stars.png");
+  /* background: url("./images/stars.png"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
