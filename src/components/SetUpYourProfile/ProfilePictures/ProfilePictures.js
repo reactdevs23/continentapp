@@ -2,8 +2,10 @@ import React, { useState } from "react";
 
 import styles from "./styles.module.css";
 import { testImg } from "../../../images/image";
+import { useDataContext } from "../../Context";
 
-const ProfilePicures = ({ setModal, setSelectedProfilePicture }) => {
+const ProfilePicures = ({ setModal }) => {
+  const { setSelectedProfilePicture } = useDataContext();
   const [selectedPhoto, setSelectedPhoto] = useState(false);
   console.log(selectedPhoto);
 

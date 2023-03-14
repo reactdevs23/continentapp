@@ -37,7 +37,7 @@ code {
 
   /* font-family */
   --primary-font: "Roboto", sans-serif;
-  --secondary-font: "Bowlby One SC", cursive;
+  --secondary-font: "Archivo Black", sans-serif;
 }
 
 body,
@@ -67,6 +67,10 @@ button {
 }
 .rightSide {
   padding-left: 265px;
+  background: url("./images/stars.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .wrapper {
   width: 90%;

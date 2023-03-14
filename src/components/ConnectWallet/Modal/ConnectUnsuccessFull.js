@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { MdClose } from "react-icons/md";
 import styles from "./styles.module.css";
 
@@ -33,13 +34,13 @@ const ConnectUnsuccessFull = ({ setModal }) => {
               onChange={(e) => setEmail(e.target.value)}
               className={styles.input}
             />
-            <button
-              type="submit"
+            <Link
+              to="/setupProfile"
               className={`${styles.button} ${styles.subsCribe}`}
               onClick={() => setModal(false)}
             >
               Subscribe
-            </button>
+            </Link>
           </form>
         </div>
       </div>

@@ -5,7 +5,6 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  background: url("../../../images/connectWallet/stars.png");
 }
 
 .heading {
@@ -60,5 +59,10 @@
 @media only screen and (max-width: 991px) {
   .connectWallet {
     min-height: calc(100vh - 165px);
+  }
+}
+@media only screen and (max-width: 520px) {
+  .heading {
+    font-size: 32px;
   }
 }

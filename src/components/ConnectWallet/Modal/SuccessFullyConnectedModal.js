@@ -16,7 +16,7 @@ const SuccessFullyConnectedModal = ({ setModal }) => {
               <span className={styles.address}>0x9B8...F53B</span>
             </div>
           </div>
-          <h4 className={styles.heading}>
+          <h4 className={`${styles.heading} ${styles.title}`}>
             Your wallet was successfully <br /> connected
           </h4>
 

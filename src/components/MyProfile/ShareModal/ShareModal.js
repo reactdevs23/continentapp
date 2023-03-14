@@ -1,4 +1,5 @@
 import React from "react";
+
 import { AiOutlineArrowRight, AiOutlineClose } from "react-icons/ai";
 import { facebook, instagram, twitter, email } from "../../../images/image";
 import styles from "./styles.module.css";

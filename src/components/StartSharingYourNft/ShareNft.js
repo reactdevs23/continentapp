@@ -1,0 +1,57 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import { AiOutlineArrowRight } from "react-icons/ai";
+import { shop, exports } from "../../images/image";
+import { useDataContext } from "../Context";
+import styles from "./styles.module.css";
+
+const ShareNft = () => {
+  const { selectedProfilePicture, userName } = useDataContext();
+  const soicals = [
+    {
+      icon: shop,
+      link: "Post your first NFT",
+      to: "",
+    },
+    {
+      icon: exports,
+      link: "Put your first NFT for sale",
+      to: "",
+    },
+  ];
+  return (
+    <div className={`${styles.shareNft} marginTop`}>
+      <h4 className={styles.heading}>Start sharing your nft</h4>
+      <div className={`${styles.profileContainer} ${styles.profilePhotoDiv}`}>
+        <img
+          className={styles.profilePhoto}
+          src={selectedProfilePicture.img}
+          alt={userName}
+        />
+        <p className={styles.userName}>{userName}</p>
+      </div>
+      <div className={styles.linksContainer}>
+        {soicals.map((el, i) => (
+          <a
+            href={el.to}
+            target="_blank"
+            rel="noreferrer"
+            key={i}
+            className={styles.links}
+          >
+            <p className={styles.linkAndIcon}>
+              <img src={el.icon} alt="#" />
+              <span className={styles.link}>{el.link}</span>
+            </p>
+            <AiOutlineArrowRight className={styles.arrow} />
+          </a>
+        ))}
+        <Link to="/" className={styles.button}>
+          Skip
+        </Link>
+      </div>
+    </div>
+  );
+};
+
+export default ShareNft;

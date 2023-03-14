@@ -32,6 +32,8 @@ import testImg from "./nftposts/nft1.png";
 import coinbase from "./connectWallet/coinbase.svg";
 import walletConnect from "./connectWallet/walletConnect.svg";
 import metamask from "./connectWallet/metamask.svg";
+import shop from "./shop.svg";
+import exports from "./export.svg";
 
 export {
   logo,
@@ -68,4 +70,6 @@ export {
   walletConnect,
   metamask,
   testImg,
+  shop,
+  exports,
 };
