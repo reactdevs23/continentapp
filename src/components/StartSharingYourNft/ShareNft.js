@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import { shop, exports } from "../../images/image";
+import { shop } from "../../images/image";
 import { useDataContext } from "../Context";
 import styles from "./styles.module.css";
 
@@ -13,15 +13,10 @@ const ShareNft = () => {
       link: "Post your first NFT",
       to: "",
     },
-    // {
-    //   icon: exports,
-    //   link: "Put your first NFT for sale",
-    //   to: "",
-    // },
   ];
   return (
     <div className={`${styles.shareNft} marginTop`}>
-      <h4 className={styles.heading}>Start sharing your nft</h4>
+      <h4 className={styles.heading}>Start sharing your NFTs</h4>
       <div className={`${styles.profileContainer} ${styles.profilePhotoDiv}`}>
         <img
           className={styles.profilePhoto}
