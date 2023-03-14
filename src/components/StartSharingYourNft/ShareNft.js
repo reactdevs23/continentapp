@@ -17,6 +17,7 @@ const ShareNft = () => {
   return (
     <div className={`${styles.shareNft} marginTop`}>
       <h4 className={styles.heading}>Start sharing your NFTs</h4>
+
       <div className={`${styles.profileContainer} ${styles.profilePhotoDiv}`}>
         <img
           className={styles.profilePhoto}
