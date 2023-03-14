@@ -10,6 +10,7 @@ const ConnectUnsuccessFull = ({ setModal }) => {
       {" "}
       <div onClick={() => setModal(false)} className={styles.overlay}></div>
       <div className={`${styles.modalWrapper} `}>
+        {" "}
         <div className={`${styles.smallModal} ${styles.connectUnsuccessFull}`}>
           <MdClose
             className={styles.close}
