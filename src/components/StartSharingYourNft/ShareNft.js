@@ -13,11 +13,11 @@ const ShareNft = () => {
       link: "Post your first NFT",
       to: "",
     },
-    {
-      icon: exports,
-      link: "Put your first NFT for sale",
-      to: "",
-    },
+    // {
+    //   icon: exports,
+    //   link: "Put your first NFT for sale",
+    //   to: "",
+    // },
   ];
   return (
     <div className={`${styles.shareNft} marginTop`}>
