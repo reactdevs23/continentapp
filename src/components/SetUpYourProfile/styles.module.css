@@ -34,6 +34,7 @@
   text-align: center;
   color: #41c6da;
   padding-bottom: 8px;
+  cursor: pointer;
 }
 .profilePhoto {
   width: 100px;
