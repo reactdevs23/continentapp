@@ -6,6 +6,7 @@ import GroupPhoto from "../GroupPhoto/GroupPhoto";
 import AddMemberModal from "../AddMemberModal/AddMemberModal";
 import Waveform from "../../Waveform/Waveform";
 import { testImg } from "../../../images/image";
+import HexagonImage from "../../Hexagon/Hexagon";
 
 const ChatRoom = ({ isRecording, DUMMY_MSGS, setShowInput }) => {
   const DUMMY__MEMBERS = [
@@ -134,13 +135,13 @@ const ChatRoom = ({ isRecording, DUMMY_MSGS, setShowInput }) => {
               <p>{adminUser ? "GroupName" : "Group Name"}</p>
               <div className={styles.groupPhotoDiv}>
                 {selectedGroupPhoto?.img ? (
-                  <img
-                    className={styles.groupPhoto}
-                    src={selectedGroupPhoto.img}
-                    alt="group"
-                  />
+                  <div className={styles.groupPhoto}>
+                    <HexagonImage src={selectedGroupPhoto.img} />
+                  </div>
                 ) : (
-                  <div className={styles.groupPhoto}></div>
+                  <div className={styles.groupPhoto}>
+                    <HexagonImage />
+                  </div>
                 )}
                 {adminUser ? (
                   <button onClick={() => setGroupPhotoModalToggle(true)}>

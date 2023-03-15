@@ -175,9 +175,8 @@
 }
 .groupPhoto {
   width: 100px;
-  height: 90px;
+  height: 105px;
   background-color: white;
-  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 .desc {
   display: flex;

@@ -32,7 +32,10 @@ const SetUpYourProfile = () => {
               <HexagonImage src={selectedProfilePicture.img} />
             </div>
           ) : (
-            <div className={styles.profilePhoto}></div>
+            <div className={styles.profilePhoto}>
+              {" "}
+              <HexagonImage />
+            </div>
           )}
 
           <button onClick={() => setProfilePicutersModal(true)}>

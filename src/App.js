@@ -15,7 +15,7 @@ import UserProfile from "./components/UserProfile/UserProfile";
 function App() {
   return (
     <div className="container">
-      {/* <Header /> */}
+      <Header />
 
       <Routes>
         <Route path="/" element={<ConnectWallet />} />{" "}

@@ -29,9 +29,7 @@
 }
 .profilePhoto {
   width: 100px;
-  height: 90px;
-  background-color: #616478;
-  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  height: 105px;
 }
 .userName {
   font-family: "Roboto";

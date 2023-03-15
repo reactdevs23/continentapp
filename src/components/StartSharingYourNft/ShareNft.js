@@ -4,6 +4,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import { shop } from "../../images/image";
 import { useDataContext } from "../Context";
 import styles from "./styles.module.css";
+import HexagonImage from "../Hexagon/Hexagon";
 
 const ShareNft = () => {
   const { selectedProfilePicture, userName } = useDataContext();
@@ -19,11 +20,11 @@ const ShareNft = () => {
       <h4 className={styles.heading}>Start sharing your NFTs</h4>
 
       <div className={`${styles.profileContainer} ${styles.profilePhotoDiv}`}>
-        <img
-          className={styles.profilePhoto}
-          src={selectedProfilePicture.img}
-          alt={userName}
-        />
+        <div className={styles.profilePhoto}>
+          {" "}
+          <HexagonImage src={selectedProfilePicture.img} />
+        </div>
+
         <p className={styles.userName}>{userName}</p>
       </div>
       <div className={styles.linksContainer}>
