@@ -36,10 +36,10 @@ const ConnectWallet = () => {
             <span className={styles.text}>Metamask</span>
           </button>
         </div>
-        <p className={`${styles.alerting} ${styles.text}`}>
+        {/* <p className={`${styles.alerting} ${styles.text}`}>
           By using Continent, you agree to our Terms of Service and our Privacy
           Policy.
-        </p>{" "}
+        </p>{" "} */}
       </section>
 
       {connectSuccess && (
