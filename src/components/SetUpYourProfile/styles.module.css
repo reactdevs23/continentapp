@@ -25,13 +25,19 @@
   flex-direction: column;
   gap: 15px;
 }
-
+.profilePhotoDiv button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: center;
+  color: #41c6da;
+  padding-bottom: 8px;
+}
 .profilePhoto {
   width: 100px;
-  height: 90px;
-
-  background-color: #fff;
-  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  height: 105px;
 }
 .userNameContainer {
   display: flex;

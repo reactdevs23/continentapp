@@ -1,6 +1,7 @@
 import React from "react";
 
 import { testImg } from "../../../images/image";
+import HexagonImage from "../../Hexagon/Hexagon";
 import styles from "./styles.module.css";
 
 const SuccessFullyConnectedModal = ({ setModal }) => {
@@ -11,7 +12,10 @@ const SuccessFullyConnectedModal = ({ setModal }) => {
         {" "}
         <div className={styles.smallModal}>
           <div className={styles.profileInfo}>
-            <img src={testImg} alt="#" className={styles.prifilePic} />
+            <div className={styles.prifilePic}>
+              {" "}
+              <HexagonImage src={testImg} />
+            </div>
             <div className={styles.nameAndAddress}>
               <span className={styles.name}>juanbautista.eth</span>
               <span className={styles.address}>0x9B8...F53B</span>

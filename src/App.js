@@ -3,6 +3,7 @@ import ConnectWallet from "./components/ConnectWallet/ConnectWallet.js/ConnectWa
 
 import EditProfile from "./components/EditProfile/EditProfile";
 import Header from "./components/Header/Header";
+import HexagonImage from "./components/Hexagon/Hexagon";
 
 import Message from "./components/Messages/Message";
 import MyProfile from "./components/MyProfile/MyProfile";
@@ -14,7 +15,7 @@ import UserProfile from "./components/UserProfile/UserProfile";
 function App() {
   return (
     <div className="container">
-      <Header />
+      {/* <Header /> */}
 
       <Routes>
         <Route path="/" element={<ConnectWallet />} />{" "}

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useDataContext } from "../Context";
+import HexagonImage from "../Hexagon/Hexagon";
 import ProfilePicures from "./ProfilePictures/ProfilePictures";
 import styles from "./styles.module.css";
 
@@ -26,11 +27,10 @@ const SetUpYourProfile = () => {
         <h4 className={styles.heading}>Set up your profile</h4>
         <div className={styles.profilePhotoDiv}>
           {selectedProfilePicture?.img ? (
-            <img
-              className={styles.profilePhoto}
-              src={selectedProfilePicture.img}
-              alt="profile"
-            />
+            <div className={styles.profilePhoto}>
+              {" "}
+              <HexagonImage src={selectedProfilePicture.img} />
+            </div>
           ) : (
             <div className={styles.profilePhoto}></div>
           )}
