@@ -1,54 +1,43 @@
 .container {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+
+  color: #ffffff;
 }
 
-.label {
-  display: block;
-  position: relative;
-  padding-left: 30px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 16px;
-  user-select: none;
-}
-
-.input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 20px;
-  width: 20px;
-  background-color: #fff;
-  border: 2px solid #777;
-  border-radius: 50%;
-}
-
-.input:checked ~ .checkmark {
-  background-color: #777;
-}
-
-.checkmark:after {
-  content: "";
-  position: absolute;
+.container input[type="checkbox"] {
   display: none;
 }
 
-.input:checked ~ .checkmark:after {
-  display: block;
+.checkmark {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #42ccd7;
+  margin-right: 5px;
+  position: relative;
+
+  cursor: pointer;
 }
 
-.input:checked ~ .checkmark:after {
-  top: 6px;
-  left: 6px;
-  width: 8px;
-  height: 8px;
+.container input[type="checkbox"]:checked + .checkmark:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+
+  background: #42ccd7;
   border-radius: 50%;
-  background: #fff;
+}
+.text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
 }

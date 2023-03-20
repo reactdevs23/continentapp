@@ -71,7 +71,7 @@
 }
 .edits,
 .tagPeople,
-.listForSale {
+.listForSaleContainer {
   display: flex;
   padding: 18px;
   gap: 6px;
@@ -91,7 +91,21 @@
   color: #fff;
   font-size: 22px;
 }
+.listForSaleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 .listForSale {
+  display: flex;
+  gap: 6px;
+}
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-top: 6px;
+  padding-left: 25px;
 }
 .btnDiv {
   padding: 18px;

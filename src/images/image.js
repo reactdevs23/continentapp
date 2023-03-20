@@ -13,6 +13,7 @@ import report from "./report.svg";
 import close from "./close.svg";
 import friends from "./mutualfriends.svg";
 import collection from "./mutualCollection.svg";
+import nftPhoto from "./nftPhoto.png";
 import nft from "./forSale/nft.png";
 import eth from "./forSale/eth.svg";
 import nft1 from "./nftposts/nft1.png";
@@ -104,4 +105,5 @@ export {
   edit,
   deleteIcon,
   walletMoney,
+  nftPhoto,
 };
