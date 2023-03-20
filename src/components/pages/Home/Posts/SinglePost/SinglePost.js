@@ -96,7 +96,6 @@ const SinglePost = ({ data, i }) => {
                 <span className={styles.time}>{data.time}</span>
               </p>
             </div>
-            {data.owner && <p className={styles.owner}>{data.owner}</p>}
           </div>
           {data.ethAmount && (
             <div

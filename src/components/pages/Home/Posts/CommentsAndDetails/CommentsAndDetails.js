@@ -15,7 +15,7 @@ import styles from "./styles.module.css";
 
 const CommentsAndDetails = ({ data, setModal }) => {
   const [postText, setPostText] = useState("");
-  // const [replayText, setReplyText] = useState("");
+
   const [shareModal, setShareModal] = useState(false);
   const comments = [
     {
@@ -139,7 +139,6 @@ const CommentsAndDetails = ({ data, setModal }) => {
                   <span className={styles.time}>{data.time}</span>
                 </p>
               </div>
-              {data.owner && <p className={styles.owner}>{data.owner}</p>}
             </div>
             {data.ethAmount && (
               <div className={styles.ethContainer}>

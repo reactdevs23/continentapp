@@ -15,7 +15,7 @@ export const ContextProvider = ({ children }) => {
       postImage: postImage,
       likes: 3000,
       comments: 200,
-      owner: "charo.eth ",
+
       postText: "Look at my new NFT!",
       time: "4h",
       author: true,
@@ -41,7 +41,7 @@ export const ContextProvider = ({ children }) => {
       postImage: postImage,
       likes: 3000,
       comments: 200,
-      owner: "charo.eth ",
+
       postText: "Look at my new NFT!",
       time: "4h",
     },
@@ -66,7 +66,7 @@ export const ContextProvider = ({ children }) => {
       postImage: postImage,
       likes: 3000,
       comments: 200,
-      owner: "charo.eth ",
+
       postText: "Look at my new NFT!",
       time: "4h",
     },
@@ -92,7 +92,7 @@ export const ContextProvider = ({ children }) => {
       postImage: postImage,
       likes: 3000,
       comments: 200,
-      owner: "charo.eth ",
+
       postText: "Look at my new NFT!",
       time: "4h",
     },

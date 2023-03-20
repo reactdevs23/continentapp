@@ -4,7 +4,7 @@ import {
   BsFillCaretLeftSquareFill,
 } from "react-icons/bs";
 
-import WhoToFollow from "../WhoToFollow/WhoToFollow";
+import WhoToFollow from "../FindFriends/FindFriends";
 
 import SinglePost from "./SinglePost/SinglePost";
 import styles from "./styles.module.css";

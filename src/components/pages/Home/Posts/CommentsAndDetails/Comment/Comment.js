@@ -24,7 +24,6 @@ const Comment = ({ userImg, userName, time, comment, likes }) => {
           </div>
           <div className={styles.timeAndReply}>
             <p className={styles.time}>{time}</p>
-            <button className={styles.replayButton}>Reply</button>
           </div>
         </div>
       </div>
