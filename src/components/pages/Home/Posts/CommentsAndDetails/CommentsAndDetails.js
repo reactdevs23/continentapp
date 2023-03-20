@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BiDotsVerticalRounded } from "react-icons/bi";
+
 import { MdOutlineClose } from "react-icons/md";
 import {
   postImage,
@@ -15,7 +15,7 @@ import styles from "./styles.module.css";
 
 const CommentsAndDetails = ({ data, setModal }) => {
   const [postText, setPostText] = useState("");
-  const [replayText, setReplyText] = useState("");
+  // const [replayText, setReplyText] = useState("");
   const [shareModal, setShareModal] = useState(false);
   const comments = [
     {
