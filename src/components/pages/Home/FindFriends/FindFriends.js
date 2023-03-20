@@ -6,7 +6,7 @@ import User from "./User";
 
 const FindFrinds = ({ showWhotoFollow }) => {
   const [userNumber, setUserNumber] = useState(3);
-  const [showMore, setShowMore] = useState(false);
+  const [showMore, setShowMore] = useState(true);
 
   const data = [
     {
