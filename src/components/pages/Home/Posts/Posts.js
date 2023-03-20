@@ -39,6 +39,3 @@ const Posts = ({ data }) => {
 };
 
 export default Posts;
-{
-  /* <SinglePost data={el} key={i} /> */
-}

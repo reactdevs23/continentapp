@@ -47,7 +47,7 @@ const PostDetails = ({ data }) => {
       </div>
       {showBuyModal && (
         <Modal setModal={setShowBuyModal}>
-          <PostBuy setModal={setShowBuyModal} {...data[id]} />
+          <PostBuy setModal={setShowBuyModal} {...data[id - 1]} />
         </Modal>
       )}
     </>

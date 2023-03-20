@@ -8,7 +8,7 @@ const Modal = ({ children, setModal, background }) => {
       <div
         className={styles.overlay}
         style={{ background: background }}
-        onClick={() => setModal(false)}
+        onClick={() => setModal((prev) => !prev)}
       ></div>
     </>
   );

@@ -10,7 +10,7 @@ import {
   deleteIcon,
 } from "../../../../../images/image";
 import Modal from "../../../../Modal/Modal";
-import EditProfile from "../../../EditProfile/EditProfile";
+
 import ShareModal from "../../../MyProfile/ShareModal/ShareModal";
 import DeletePost from "./Modals/DeletePost/Delete";
 import EditInformation from "./Modals/EditInformation/EditInformation";
