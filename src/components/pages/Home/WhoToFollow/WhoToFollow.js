@@ -3,7 +3,7 @@ import HexagonImage from "../../../Hexagon/Hexagon";
 import { user } from "../../../../images/image";
 import styles from "./styles.module.css";
 
-const WhoToFollow = () => {
+const WhoToFollow = ({ showWhotoFollow }) => {
   const data = [
     {
       userImage: user,
@@ -27,7 +27,11 @@ const WhoToFollow = () => {
     },
   ];
   return (
-    <div className={`${styles.whotoFollow} marginTop`}>
+    <div
+      className={`${styles.whotoFollow} ${
+        showWhotoFollow && styles.showWhotoFollow
+      } marginTop`}
+    >
       <h4 className={styles.title}>Who to follow</h4>
 
       {data.map((el, i) => (

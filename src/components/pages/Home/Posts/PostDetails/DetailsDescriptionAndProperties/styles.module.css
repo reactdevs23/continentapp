@@ -69,3 +69,29 @@
 .address {
   color: #42ccd7;
 }
+@media only screen and (max-width: 520px) {
+  .info,
+  .titleContainer {
+    grid-template-columns: 1fr 0.8fr 1fr;
+  }
+  .text {
+    font-size: 13px;
+  }
+  .header,
+  .infoContainer {
+    padding: 18px 15px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .info,
+  .titleContainer {
+    grid-template-columns: 1fr 0.7fr 1fr;
+  }
+  .text {
+    font-size: 12px;
+  }
+  .header,
+  .infoContainer {
+    padding: 18px 12px;
+  }
+}

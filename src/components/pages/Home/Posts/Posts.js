@@ -3,16 +3,14 @@ import {
   BsFillCaretRightSquareFill,
   BsFillCaretLeftSquareFill,
 } from "react-icons/bs";
-import { postImage } from "../../../../images/image";
+
 import WhoToFollow from "../WhoToFollow/WhoToFollow";
 
-import CommentsAndDetails from "./CommentsAndDetails/CommentsAndDetails";
-import ShareWithModal from "./ShareModal/ShareWithModal";
 import SinglePost from "./SinglePost/SinglePost";
 import styles from "./styles.module.css";
 
 const Posts = ({ data }) => {
-  const [showWhotoFollow, setShowWhotoFollow] = useState(true);
+  const [showWhotoFollow, setShowWhotoFollow] = useState(false);
 
   return (
     <>
@@ -33,7 +31,8 @@ const Posts = ({ data }) => {
             onClick={() => setShowWhotoFollow((prev) => !prev)}
           />
         )}
-        {showWhotoFollow && <WhoToFollow />}
+
+        <WhoToFollow showWhotoFollow={showWhotoFollow} />
       </div>{" "}
     </>
   );

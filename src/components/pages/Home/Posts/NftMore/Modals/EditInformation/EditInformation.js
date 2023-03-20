@@ -27,7 +27,7 @@ const EditInformation = ({ setModal }) => {
         <div className={styles.titleContainer}>
           <h4 className={styles.title}>Edit information</h4>
         </div>
-        <div className={styles.wrapper}>
+        <div className={`${styles.wrapper} grScrollbar`}>
           <img src={nftPhoto} alt="#" className={styles.image} />
           <div className={styles.details}>
             <div className={styles.userContainer}>
