@@ -7,7 +7,6 @@ import {
   lovefill,
   comment,
   send,
-  userIcon,
   ethIcon,
 } from "../../../../../images/image";
 import { useDataContext } from "../../../../Context";
@@ -35,17 +34,18 @@ const SinglePost = ({ data, i }) => {
         <div className={styles.header}>
           <div className={styles.userContainer}>
             <img src={user} alt="#" className={styles.userImg} />{" "}
-            <p className={styles.text}>{data.userName}</p>
+            <p className={`${styles.text} ${styles.userName}`}>
+              {data.userName}
+            </p>
           </div>
           <BiDotsVerticalRounded
             className={styles.more}
             onClick={() => setNftMore((prev) => !prev)}
           />
-          {nftMore && <NftMore setNftMore={setNftMore} />}
+          {nftMore && <NftMore author={data.author} setNftMore={setNftMore} />}
         </div>
         <div className={styles.imageContainer}>
           <img src={data.postImage} alt="#" className={styles.nftImage} />
-          <img src={userIcon} alt="#" className={styles.userIcon} />
         </div>
         <div className={styles.informationContainer}>
           <div className={styles.information}>
@@ -88,7 +88,9 @@ const SinglePost = ({ data, i }) => {
               </Link>
             </div>
             <div className={styles.aboutPost}>
-              <p className={styles.text}>{data.userName} </p>
+              <p className={`${styles.text} ${styles.userName}`}>
+                {data.userName}{" "}
+              </p>
               <p className={`${styles.text} ${styles.subText}`}>
                 {data.postText} &nbsp;
                 <span className={styles.time}>{data.time}</span>

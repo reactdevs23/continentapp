@@ -19,8 +19,7 @@ import OtherReasonModal from "./Modals/Report/ReportOtherModal/OtherReason";
 import ThanksForReport from "./Modals/Report/ReportOtherModal/ThanksForReport";
 import styles from "./styles.module.css";
 
-const NftMore = ({ setNftMore }) => {
-  const [author, setAuthor] = useState(true);
+const NftMore = ({ setNftMore, author }) => {
   const [editProfileModal, setEditProfileModal] = useState(false);
   const [deletePostModal, setDeletePostModal] = useState(false);
   const [shareModal, setShareModal] = useState(false);
@@ -78,18 +77,20 @@ const NftMore = ({ setNftMore }) => {
             <AiOutlineArrowRight className={styles.arrow} />
           </p>
         </div>{" "}
-        <div
-          className={styles.socialContainer}
-          onClick={() => setDeletePostModal((prev) => !prev)}
-        >
-          <p className={styles.socials}>
-            <p className={styles.nameAndIcon}>
-              <img src={deleteIcon} alt="#" className={styles.socialIcon} />
-              <span className={styles.name}>Delete</span>
+        {author && (
+          <div
+            className={styles.socialContainer}
+            onClick={() => setDeletePostModal((prev) => !prev)}
+          >
+            <p className={styles.socials}>
+              <p className={styles.nameAndIcon}>
+                <img src={deleteIcon} alt="#" className={styles.socialIcon} />
+                <span className={styles.name}>Delete</span>
+              </p>
+              <AiOutlineArrowRight className={styles.arrow} />
             </p>
-            <AiOutlineArrowRight className={styles.arrow} />
-          </p>
-        </div>
+          </div>
+        )}
         <div
           className={styles.socialContainer}
           onClick={() => setNftMore(false)}

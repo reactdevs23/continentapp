@@ -32,7 +32,7 @@ const WhoToFollow = ({ showWhotoFollow }) => {
         showWhotoFollow && styles.showWhotoFollow
       } marginTop`}
     >
-      <h4 className={styles.title}>Who to follow</h4>
+      <h4 className={styles.title}>Find Friends</h4>
 
       {data.map((el, i) => (
         <div className={styles.userContainer} key={i}>

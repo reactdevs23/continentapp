@@ -57,9 +57,10 @@ const Header = () => {
               type="text"
               placeholder="Search items, collections, and accounts"
               className={styles.input}
-              value={searchQuery}
+              value={searchValue}
               onChange={(e) => {
                 setSearchQuery(e.target.value);
+                setSearchValue(e.target.value);
                 filterData(e.target.value);
               }}
             />
@@ -78,7 +79,15 @@ const Header = () => {
                         className={searchStyles.moonBirds}
                       />
                       <div className={searchStyles.nameAndItems}>
-                        <p className={searchStyles.name}>{item.name}</p>
+                        <p
+                          className={searchStyles.name}
+                          onClick={() => {
+                            setSearchValue(item.name);
+                            setSearchQuery("");
+                          }}
+                        >
+                          {item.name}
+                        </p>
                         <p className={searchStyles.items}>
                           {item.items.toLocaleString()}
                         </p>
@@ -97,7 +106,15 @@ const Header = () => {
                         <HexagonImage src={item.img} />
                       </div>
 
-                      <p className={searchStyles.name}>{item.name}</p>
+                      <p
+                        className={searchStyles.name}
+                        onClick={() => {
+                          setSearchValue(item.name);
+                          setSearchQuery("");
+                        }}
+                      >
+                        {item.name}
+                      </p>
                     </div>
                   </div>
                 ))}

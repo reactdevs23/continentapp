@@ -29,6 +29,9 @@
   line-height: 140%;
   color: var(--primary-color);
 }
+.userName {
+  cursor: pointer;
+}
 .subText {
   font-weight: 400;
 }

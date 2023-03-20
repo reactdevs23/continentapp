@@ -49,6 +49,7 @@
   line-height: 120%;
 
   color: #fafafa;
+  cursor: pointer;
 }
 .items {
   font-family: "Roboto";

@@ -51,6 +51,7 @@ import moonbirds from "./moonbirds.svg";
 import edit from "./edit.svg";
 import walletMoney from "./walletMoney.svg";
 import deleteIcon from "./delete.svg";
+import profile from "./profile.svg";
 
 export {
   logo,
@@ -106,4 +107,5 @@ export {
   deleteIcon,
   walletMoney,
   nftPhoto,
+  profile,
 };

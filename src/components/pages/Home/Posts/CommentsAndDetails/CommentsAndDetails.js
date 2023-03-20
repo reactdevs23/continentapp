@@ -5,18 +5,18 @@ import {
   postImage,
   user,
   ethIcon,
-  lovefill,
-  love,
   comment,
   send,
 } from "../../../../../images/image";
 import Comment from "./Comment/Comment";
+import Modal from "../../../../Modal/Modal";
+import ShareModal from "../../../MyProfile/ShareModal/ShareModal";
 import styles from "./styles.module.css";
 
 const CommentsAndDetails = ({ data, setModal }) => {
-  const [like, setLike] = useState(false);
   const [postText, setPostText] = useState("");
   const [replayText, setReplyText] = useState("");
+  const [shareModal, setShareModal] = useState(false);
   const comments = [
     {
       userImg: user,
@@ -126,13 +126,11 @@ const CommentsAndDetails = ({ data, setModal }) => {
               <img src={user} alt="#" className={styles.userImg} />{" "}
               <p className={styles.text}>{data.userName}</p>
             </div>
-            <BiDotsVerticalRounded className={styles.more} />
           </div>
           <div className={styles.informationContainer}>
             <div className={styles.information}>
               <div className={styles.idAndbutton}>
                 <p className={styles.text}>Moonbird #{data.id}</p>
-                <p className={styles.button}>Detail</p>
               </div>
               <div className={styles.aboutPost}>
                 <p className={styles.text}>{data.userName} </p>
@@ -156,18 +154,6 @@ const CommentsAndDetails = ({ data, setModal }) => {
             ))}
           </div>{" "}
           <div className={styles.likeCommentSend}>
-            <div className={styles.like}>
-              <img
-                src={like ? lovefill : love}
-                alt="#"
-                className={styles.icon}
-                onClick={() => setLike((prev) => !prev)}
-              />
-
-              <span className={styles.number}>
-                {numberFormating(data.likes)}
-              </span>
-            </div>
             <div className={styles.comment}>
               <img src={comment} alt="#" className={styles.icon} />
               <span className={styles.number}>
@@ -175,7 +161,12 @@ const CommentsAndDetails = ({ data, setModal }) => {
               </span>
             </div>
 
-            <img src={send} alt="#" className={styles.icon} />
+            <img
+              src={send}
+              alt="#"
+              className={styles.icon}
+              onClick={() => setShareModal((prev) => !prev)}
+            />
           </div>
           <form className={styles.postInputContainer}>
             <input
@@ -200,6 +191,11 @@ const CommentsAndDetails = ({ data, setModal }) => {
         className={styles.close}
         onClick={() => setModal(false)}
       />
+      {shareModal && (
+        <Modal setModal={setShareModal}>
+          <ShareModal setModal={setShareModal} />
+        </Modal>
+      )}
       <div className={styles.overlay} onClick={() => setModal(false)}></div>
     </>
   );

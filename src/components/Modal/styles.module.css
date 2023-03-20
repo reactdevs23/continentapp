@@ -3,7 +3,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 90;
+  z-index: 92;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -15,6 +15,6 @@
   width: 100%;
   min-height: 100vh;
   background: rgba(9, 13, 36, 0.67);
-  z-index: 88;
+  z-index: 91;
   cursor: pointer;
 }

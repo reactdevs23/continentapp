@@ -1,6 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { home, wallet, marketplace, explore } from "../../images/image.js";
+import {
+  home,
+  wallet,
+  marketplace,
+  explore,
+  userIcon,
+  profile,
+} from "../../images/image.js";
 import styles from "./styles.module.css";
 
 const Sidebar = ({ showSidebar }) => {
@@ -8,6 +15,7 @@ const Sidebar = ({ showSidebar }) => {
     { icon: wallet, navItem: "Wallet", to: "/wallets" },
     { icon: marketplace, navItem: "Marketplace", to: "#" },
     { icon: explore, navItem: "Explore", to: "#" },
+    { icon: profile, navItem: "Profile", to: "#" },
   ];
   return (
     <div className={` ${styles.sidebar} ${showSidebar && styles.showSidebar}`}>
