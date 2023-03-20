@@ -54,7 +54,7 @@
     max-height: calc(100vh - 205px);
   }
   .arrow {
-    top: 175px;
+    top: 170px;
   }
 }
 @media only screen and (max-width: 520px) {
