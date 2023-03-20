@@ -8,6 +8,9 @@ import marketplace from "./marketplace.svg";
 import explore from "./explore.svg";
 import banner from "./banner.png";
 import copy from "./copy.svg";
+import share from "./share.svg";
+import report from "./report.svg";
+import close from "./close.svg";
 import friends from "./mutualfriends.svg";
 import collection from "./mutualCollection.svg";
 import nft from "./forSale/nft.png";
@@ -24,6 +27,8 @@ import nft9 from "./nftposts/nft9.png";
 import nft10 from "./nftposts/nft10.png";
 import nft11 from "./nftposts/nft11.png";
 import nft12 from "./nftposts/nft12.png";
+import imageInput from "./image-add.png";
+import micImage from "./mic.png";
 import facebook from "./social/facebook.svg";
 import instagram from "./social/instagram.svg";
 import twitter from "./social/twitter.svg";
@@ -34,6 +39,17 @@ import walletConnect from "./connectWallet/walletConnect.svg";
 import metamask from "./connectWallet/metamask.svg";
 import shop from "./shop.svg";
 import exports from "./export.svg";
+import postImage from "./postImage.png";
+import love from "./loveoutline.svg";
+import lovefill from "./lovefill.svg";
+import comment from "./comment.svg";
+import send from "./send.svg";
+import userIcon from "./userIcon.svg";
+import ethIcon from "./ethIcon.svg";
+import moonbirds from "./moonbirds.svg";
+import edit from "./edit.svg";
+import walletMoney from "./walletMoney.svg";
+import deleteIcon from "./delete.svg";
 
 export {
   logo,
@@ -72,4 +88,20 @@ export {
   testImg,
   shop,
   exports,
+  imageInput,
+  micImage,
+  love,
+  lovefill,
+  comment,
+  send,
+  userIcon,
+  postImage,
+  ethIcon,
+  moonbirds,
+  share,
+  report,
+  close,
+  edit,
+  deleteIcon,
+  walletMoney,
 };
