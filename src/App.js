@@ -28,10 +28,9 @@ function App() {
         <div className="rightSide">
           <Routes>
             <Route path="/" element={<Posts data={posts} />}></Route>
-
-            {/* <Route path="/" element={<MyProfile />}></Route>
-          <Route path="/userProfile" element={<UserProfile />}></Route>
-          <Route path="/editprofile" element={<EditProfile />}></Route>*/}
+            <Route path="/profile" element={<MyProfile />}></Route>
+            {/* <Route path="/userProfile" element={<UserProfile />}></Route>
+            <Route path="/editprofile" element={<EditProfile />}></Route> */}
             <Route path="/messages/:id" element={<Message />} />
           </Routes>
         </div>

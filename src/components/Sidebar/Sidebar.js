@@ -5,7 +5,6 @@ import {
   wallet,
   marketplace,
   explore,
-  userIcon,
   profile,
 } from "../../images/image.js";
 import styles from "./styles.module.css";
@@ -15,7 +14,7 @@ const Sidebar = ({ showSidebar }) => {
     { icon: wallet, navItem: "Wallet", to: "/wallets" },
     { icon: marketplace, navItem: "Marketplace", to: "#" },
     { icon: explore, navItem: "Explore", to: "#" },
-    { icon: profile, navItem: "Profile", to: "#" },
+    { icon: profile, navItem: "Profile", to: "/profile" },
   ];
   return (
     <div className={` ${styles.sidebar} ${showSidebar && styles.showSidebar}`}>

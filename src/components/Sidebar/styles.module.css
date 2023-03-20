@@ -8,6 +8,9 @@
   min-height: calc(100vh - 101px);
 
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .sidebar::before {
   content: "";
